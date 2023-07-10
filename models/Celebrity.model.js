@@ -1,6 +1,6 @@
 //  Add your code here
 
-const {Schema, model} = require('mongoose');
+const { Schema, model } = require('mongoose')
 
 
 const celebritySchema = new Schema({
@@ -21,5 +21,5 @@ const celebritySchema = new Schema({
 
 })
 
-const CelebrityModel = model('celebrity', celebritySchema)
-model.export = CelebrityModel;
+const Celebrity = model('Celebrity', celebritySchema)
+module.exports = Celebrity;
