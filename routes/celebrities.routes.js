@@ -32,6 +32,7 @@ router.get("/create", async (req, res) => {
 
 // create new celbrity
 router.post("/create", async (req, res) => {
+    console.log(req.body)
     const data = req.body
 
     try{
@@ -39,6 +40,7 @@ router.post("/create", async (req, res) => {
         const newCelebrity = await Celebrity.create(data)
         
         console.log(newCelebrity)
+        // redirect needs the / to work
         res.redirect("/celebrities/")
 
     } catch(err){

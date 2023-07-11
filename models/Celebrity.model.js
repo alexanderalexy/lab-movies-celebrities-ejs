@@ -19,7 +19,6 @@ const celebritySchema = new Schema({
    } 
     
 
-})
-
+})// Celebrity is the name of the collection in mongodb
 const Celebrity = model('Celebrity', celebritySchema)
 module.exports = Celebrity;
